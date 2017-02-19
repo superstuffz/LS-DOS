@@ -66,7 +66,7 @@
             End If
         End While
         running = False
-        Return True 'VB complained that i didn't return anything so i returned something.
+        Return True
         Environment.Exit(0)
     End Function
 

@@ -1,6 +1,6 @@
 ﻿Public Class print
     Dim input As String
-    Function exec()
+    Function exec()  'Broken.
         Console.WriteLine("Blue [Y/N]")
         If GetInputYesNo() = True Then
             Console.Write("write")
@@ -12,6 +12,7 @@
             SetInput(input)
             Console.WriteLine(input)
         End If
+        Return True
     End Function
 
 

@@ -9,7 +9,6 @@
         Else
             Console.Write("write")
             GetInput()
-            SetInput(input)
             Console.WriteLine(input)
         End If
         Return True

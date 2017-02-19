@@ -24,14 +24,12 @@
         End If
         Return True
     End Function
-    Function SetInput(ByRef s As String)
-        s = input
-    End Function
+
     Function GetInputYesNo()
         GetInput()
-        If input = "y" Then
+        If input.ToLower = "y" Then
             Return True
-        ElseIf input = "n" Then
+        ElseIf input.ToLower = "n" Then
             Return False
         Else
             ctext("You did not answer [Y/N] properly. Assuming yes.", ConsoleColor.Red)
